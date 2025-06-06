@@ -1,0 +1,6 @@
+name: dev-notification-system
+
+include:
+  - infrastructure/compose.yaml
+  - services/compose.yaml
+  - observability/compose.yaml

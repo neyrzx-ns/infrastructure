@@ -1,0 +1,10 @@
+services:
+  observability-redis-insight:
+    image: redis/redisinsight:latest
+    env_file:
+      - .env
+    volumes:
+      - observability-redis-insight-data:/data
+
+volumes:
+  observability-redis-insight-data:

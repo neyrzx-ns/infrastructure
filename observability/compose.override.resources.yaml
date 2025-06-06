@@ -1,0 +1,15 @@
+services:
+  observability-redis-insight:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 250M
+
+  kafka-ui:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 400M
+  

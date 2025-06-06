@@ -1,0 +1,4 @@
+include:
+  - path:
+    - compose.kafka.yaml
+    - compose.override.ports.yaml

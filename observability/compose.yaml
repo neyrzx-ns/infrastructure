@@ -1,0 +1,9 @@
+include:
+  - path:
+    - compose.kafka-ui.yaml
+    - compose.redis-insight.yaml
+    - compose.prometheus.yaml
+    - compose.otel-collector.yaml
+    - compose.grafana.yaml
+    - compose.override.resources.yaml
+    - compose.override.ports.yaml

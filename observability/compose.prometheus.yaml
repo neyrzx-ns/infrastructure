@@ -1,0 +1,8 @@
+services:
+  observability-prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - observability-prometheus-data:/prometheus
+
+volumes:
+  observability-prometheus-data:

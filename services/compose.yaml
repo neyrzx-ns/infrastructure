@@ -1,0 +1,3 @@
+include:
+  - ./notification/compose.yaml
+  - ./api-gateway/compose.yaml

@@ -1,0 +1,9 @@
+services:
+  observability-grafana:
+    image: grafana/grafana-enterprise:latest
+    volumes:
+      - observability-grafana-data:/var/lib/grafana
+
+volumes:
+  observability-grafana-data:
+  

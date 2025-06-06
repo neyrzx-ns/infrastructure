@@ -1,0 +1,7 @@
+services:
+  api-gateway-redis:
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M

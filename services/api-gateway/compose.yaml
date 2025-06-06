@@ -1,0 +1,4 @@
+include:
+  - path:
+    - compose.redis.yaml
+    - compose.resources.yaml

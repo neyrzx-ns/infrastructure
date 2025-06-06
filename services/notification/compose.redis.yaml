@@ -1,0 +1,9 @@
+services:
+  notification-redis:
+    image: redis:8.0-alpine
+    command: redis-server --appendonly no --maxmemory 500mb --maxmemory-policy allkeys-lru
+    volumes:
+      - notification-redis-data:/data
+
+volumes:
+  notification-redis-data:

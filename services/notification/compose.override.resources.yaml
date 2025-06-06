@@ -1,0 +1,14 @@
+services:
+  notification-redis:
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 500M
+
+  notification-postgres:
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G

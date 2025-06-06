@@ -1,0 +1,16 @@
+services:
+  observability-redis-insight:
+    ports:
+      - 5540:5540
+
+  kafka-ui:
+    ports:
+      - 8080:8080
+
+  observability-prometheus:
+    ports:
+      - 9090:9090
+
+  observability-grafana:
+    ports:
+      - 3000:3000
