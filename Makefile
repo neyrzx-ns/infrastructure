@@ -10,7 +10,12 @@ shutdown:
 destroy:
 	@docker compose down -v
 
-tooling-build-protoc-image:
-	@docker build -t tool-protoc:latest --target final ./tooling/protoc/
-
 .PHONY: deploy destroy shutdown deploy-debug
+
+tooling-build-protoc-image:
+	@docker build -t ryme/tool-protoc:latest --target final ./tooling/protoc/
+
+tooling-push-protoc-image:
+	@docker push ryme/tool-protoc:latest
+
+.PHONY: tooling-build-protoc-image tooling-push-protoc-image
